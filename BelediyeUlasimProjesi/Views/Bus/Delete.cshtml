@@ -1,0 +1,59 @@
+﻿@model BelediyeUlasimProjesi.Data.Bus
+
+@{
+    ViewData["Title"] = "Otobüsü Sil";
+}
+<php>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+</php>
+<h1 class="text-center">Otobüs Silinecek</h1>
+<div style="border-style:groove">
+    <div id="govde">
+        <h6>Silmek istediğinize emin misiniz?</h6>
+        <div>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.BusName)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.BusName)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StationName)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.StationName)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.FirstDepartureTime)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FirstDepartureTime)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.LastDepartureTime)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.LastDepartureTime)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.CreatedDate)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.CreatedDate)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Sil" class="btn btn-danger" /> |
+                <a class="btn btn-primary" asp-action="List">Geri</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+

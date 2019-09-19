@@ -1,0 +1,3101 @@
+﻿@model BelediyeUlasimProjesi.Data.Station
+@{
+    ViewData["Title"] = "Güzergah Detayı";
+}
+<php>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+</php>
+<h1 class="text-center">Güzergah Detayı </h1>
+<div style="border-style:groove">
+    <div id="govde">
+        <div>
+            <h4>@Html.DisplayFor(model => model.StationName) Güzergahı / <a class="btn-link" asp-action="TimeList" asp-route-id="@Model.Id">Saat Çizelgesi</a></h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StationName)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample01" role="button" aria-expanded="false" aria-controls="multiCollapseExample01">@Html.DisplayFor(model => model.StationName)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample01">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>00  15  30  45 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak1)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample02" role="button" aria-expanded="false" aria-controls="multiCollapseExample02">@Html.DisplayFor(model => model.Durak1)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample02">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>38  53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>08   23   38   53   </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak2)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample03" role="button" aria-expanded="false" aria-controls="multiCollapseExample03">@Html.DisplayFor(model => model.Durak2)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample03">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak3)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample04" role="button" aria-expanded="false" aria-controls="multiCollapseExample04">@Html.DisplayFor(model => model.Durak3)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample04">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>24 38 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>29  44  59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak4)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample05" role="button" aria-expanded="false" aria-controls="multiCollapseExample05">@Html.DisplayFor(model => model.Durak4)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample05">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>17  32  47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak5)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample06" role="button" aria-expanded="false" aria-controls="multiCollapseExample06">@Html.DisplayFor(model => model.Durak5)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample06">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>15  35  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>15  35  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak6)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample07" role="button" aria-expanded="false" aria-controls="multiCollapseExample07">@Html.DisplayFor(model => model.Durak6)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample07">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>38  53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>08   23   38   53   </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak7)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample08" role="button" aria-expanded="false" aria-controls="multiCollapseExample08">@Html.DisplayFor(model => model.Durak7)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample08">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak8)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample09" role="button" aria-expanded="false" aria-controls="multiCollapseExample09">@Html.DisplayFor(model => model.Durak8)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample09">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>24 38 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>29  44  59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak9)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample10" role="button" aria-expanded="false" aria-controls="multiCollapseExample10">@Html.DisplayFor(model => model.Durak9)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample10">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>17  32  47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak10)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample11" role="button" aria-expanded="false" aria-controls="multiCollapseExample11">@Html.DisplayFor(model => model.Durak10)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample11">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>15  35  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>15  35  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak11)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample12" role="button" aria-expanded="false" aria-controls="multiCollapseExample12">@Html.DisplayFor(model => model.Durak11)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample12">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>03  18  33  48 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>38  53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>08   23   38   53   </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>08   23   38   53 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>08   23   38   53</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak12)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample13" role="button" aria-expanded="false" aria-controls="multiCollapseExample13">@Html.DisplayFor(model => model.Durak12)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample13">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>06  21  41  51 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>11  26  41  56 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak13)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample14" role="button" aria-expanded="false" aria-controls="multiCollapseExample14">@Html.DisplayFor(model => model.Durak13)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample14">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>24 38 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>09 24 38 54 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>29  44  59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>14 29 44 59 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak14)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample15" role="button" aria-expanded="false" aria-controls="multiCollapseExample15">@Html.DisplayFor(model => model.Durak14)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample15">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>12 27 41 57 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>17  32  47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>02 17 32 47 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Durak15)
+                </dt>
+                <dd class="col-sm-10">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample16" role="button" aria-expanded="false" aria-controls="multiCollapseExample16">@Html.DisplayFor(model => model.Durak15)</a>
+                    <div class="collapse multi-collapse" id="multiCollapseExample16">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>15  35  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Saat</th>
+                                                    <th scope="col">Dakika</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">06</th>
+                                                    <td>15  35  45 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">07</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">08</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">09</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">21</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">22</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">23</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">00</th>
+                                                    <td>05  20  35  50 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                @*<dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>*@
+            </dl>
+        </div>
+    </div>
+</div>
+<div>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">Düzenle</a> |
+    <a asp-action="List">Geri</a>
+</div>
+

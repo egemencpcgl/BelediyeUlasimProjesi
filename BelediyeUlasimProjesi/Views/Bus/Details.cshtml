@@ -1,0 +1,54 @@
+﻿@model BelediyeUlasimProjesi.Data.Bus
+
+
+@{
+    ViewData["Title"] = "Otobüs Detayları";
+}
+
+<php>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+</php>
+<h1 class="text-center">Otobüs Detayları</h1>
+<div style="border-style:groove">
+    <div id="govde">
+        <h4>Bilgiler</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.BusName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.BusName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.StationName)
+            </dt>
+            <dd  class="col-sm-10">
+                <a asp-controller="Station" asp-action="Details" asp-route-id="@Model.StationId">@Html.DisplayFor(model => model.StationName)</a>
+            </dd>
+            <dt class=" col-sm-2">
+                @Html.DisplayNameFor(model => model.FirstDepartureTime)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FirstDepartureTime)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.LastDepartureTime)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.LastDepartureTime)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CreatedDate)
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">Düzenle</a> |
+    <a asp-action="List">Geri</a>
+</div>
